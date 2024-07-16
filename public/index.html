@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chatterbox - Elegant Messaging</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div id="app-container">
+       <div id="auth-container">
+           <div class="auth-box" id="login-box">
+               <h1><i class="fas fa-comment-dots"></i> Chatterbox</h1>
+               <input type="email" id="login-email" placeholder="Email">
+               <input type="password" id="login-password" placeholder="Password">
+               <button id="login-btn">Log In</button>
+               <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+           </div>
+           <div class="auth-box" id="signup-box" style="display: none;">
+               <h1><i class="fas fa-user-plus"></i> Sign Up</h1>
+               <input type="email" id="signup-email" placeholder="Email">
+               <input type="password" id="signup-password" placeholder="Password">
+               <input type="tel" id="signup-phone" placeholder="Phone Number">
+               <button id="signup-btn">Sign Up</button>
+               <p>Already have an account? <a href="#" id="show-login">Log In</a></p>
+           </div>
+       </div>
+       
+
+
+       <div id="chat-container" style="display: none;">
+           <nav id="sidebar">
+               <div class="sidebar-header">
+                   <h2><i class="fas fa-users"></i> Contacts</h2>
+               </div>
+               <div id="active-users"></div>
+           </nav>
+           <main id="chat-area">
+               <header id="chat-header">
+                   <h2>Chatting with <span id="current-chat-partner">No one selected</span></h2>
+                   <!-- <button id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button> -->
+               </header>
+               <div id="chat-messages"></div>
+               <footer id="chat-input">
+                   <input type="text" id="message-input" placeholder="Type your message...">
+                   <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+               </footer>
+           </main>
+       </div>
+   </div>
+
+
+   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>
