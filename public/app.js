@@ -1,13 +1,6 @@
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDwg-EuEYFSn4Y3IqiaW-w3fUoS1FNKfaE",
-    authDomain: "new-chat-app-17ec7.firebaseapp.com",
-    databaseURL: "https://new-chat-app-17ec7-default-rtdb.firebaseio.com",
-    projectId: "new-chat-app-17ec7",
-    storageBucket: "new-chat-app-17ec7.appspot.com",
-    messagingSenderId: "221822313733",
-    appId: "1:221822313733:web:56357c7624a135a99ec36c",
-    measurementId: "G-VDQDBJT9ZE"
+   
 };
 
 // Initialize Firebase
